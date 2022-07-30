@@ -10,7 +10,7 @@
   export let drawer: bool;
 </script>
 
-<div class="bg-zinc-800 text-white flex flex-row items-center px-3 py-3 justify-between drop-shadow-lg">
+<div class="bg-zinc-800 text-zinc-100 flex flex-row items-center px-3 py-3 justify-between drop-shadow-lg z-20">
 
   <div class="flex flex-row items-center gap-x-2">
     <ToolbarButton on:click={() => drawer = !drawer}>

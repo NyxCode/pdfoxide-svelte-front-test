@@ -7,4 +7,24 @@ body,
 body > div {
 	height: 100%;
 	min-height: 100%;
+	max-height: 100%;
+}
+
+.pages-scrollbar::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+.pages-scrollbar::-webkit-scrollbar {
+	width: 16px;
+	background-color: transparent;
+}
+
+.pages-scrollbar::-webkit-scrollbar-thumb {
+	/* @apply border-4 border-zinc-800 bg-zinc-500; */
+	@apply text-zinc-700;
+	@apply bg-zinc-500 hover:bg-zinc-400 active:bg-zinc-300 transition duration-500;
+
+	border-radius: 8px;
+	border-width: 3px;
+	border: 3px solid currentColor;
 }

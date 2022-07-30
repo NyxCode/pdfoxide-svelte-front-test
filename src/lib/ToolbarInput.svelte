@@ -3,7 +3,7 @@
 </script>
 
 
-<input type="number" class="mr-0 w-6 bg-zinc-900 rounded text-center" inputmode="numeric" pattern="[0-9]*" bind:value>
+<input type="number" class="mr-0 w-8 bg-zinc-900 rounded text-right pr-[3px]" inputmode="numeric" pattern="[0-9]*" bind:value>
 
 <style>
   input[type="number"]::-webkit-outer-spin-button,
