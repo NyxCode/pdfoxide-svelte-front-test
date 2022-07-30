@@ -5,12 +5,15 @@
   import Printer from "svelte-material-icons/Printer.svelte";
   import ToolbarButton from "./ToolbarButton.svelte";
   import ToolbarInput from "./ToolbarInput.svelte";
+
+
+  export let drawer: bool;
 </script>
 
-<div class="bg-zinc-800 text-white flex flex-row items-center px-3 py-3 justify-between">
+<div class="bg-zinc-800 text-white flex flex-row items-center px-3 py-3 justify-between drop-shadow-lg">
 
   <div class="flex flex-row items-center gap-x-2">
-    <ToolbarButton>
+    <ToolbarButton on:click={() => drawer = !drawer}>
       <Menu size="1.5em" />
     </ToolbarButton>
     <span class="text-sm">FileName.pdf</span>
@@ -31,8 +34,5 @@
     <ToolbarButton>
       <DotsVertical size="1.5em" />
     </ToolbarButton>
-    
-    
-    
   </div>
 </div>

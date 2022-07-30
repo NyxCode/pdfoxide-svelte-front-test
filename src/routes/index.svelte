@@ -2,6 +2,6 @@
 	import Viewer from "../lib/Viewer.svelte"
 </script>
 
-<div class="h-full p-3">
+<div class="h-full">
 	<Viewer />
 </div>
