@@ -7,29 +7,29 @@
   import ToolbarInput from "./ToolbarInput.svelte";
 </script>
 
-<div class="bg-zinc-800 text-white flex flex-row items-center px-3 py-2 justify-between">
+<div class="bg-zinc-800 text-white flex flex-row items-center px-3 py-3 justify-between">
 
   <div class="flex flex-row items-center gap-x-2">
     <ToolbarButton>
-      <Menu/>
+      <Menu size="1.5em" />
     </ToolbarButton>
     <span class="text-sm">FileName.pdf</span>
   </div>
 
-  <div class="flex flex-row">
+  <div class="flex flex-row text-sm">
     <ToolbarInput value={12} />
     <span class="ml-1">/ 24</span>
   </div>
 
   <div class="flex flex-row gap-x-1">
     <ToolbarButton>
-      <Download />
+      <Download size="1.5em" />
     </ToolbarButton>
     <ToolbarButton>
-      <Printer />
+      <Printer size="1.5em" />
     </ToolbarButton>
     <ToolbarButton>
-      <DotsVertical />
+      <DotsVertical size="1.5em" />
     </ToolbarButton>
     
     
